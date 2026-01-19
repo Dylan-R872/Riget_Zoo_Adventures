@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RZA | Plan Your Visit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">🦁 Riget Zoo Adventures</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.php">Account</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="sideMenu" id="sideMenu">
+        <a href="javascript:void(0)"
+            class="closeBtn"
+            onclick="closeNav()">
+            x
+        </a>
+        <div class="mainMenu">
+            <h2>Menu</h2>
+            <a href="index.html" 
+            onclick="showContent('Home')">Home</a>
+            <a href="visit.html" 
+            onclick="showContent('Plan')">Plan Your Visit</a>
+            <a href="tickets.php"  
+            onclick="showContent('Tickets')">Ticket Admission</a>
+            <a href="safari.html"
+            onclick="showContent('Safari')">Animals & Safari</a>
+            <a href="hotel.php"  
+            onclick="showContent('Hotel')">Hotel Bookings</a>
+            <a href="education.html"  
+            onclick="showContent('Education')">Education</a>
+            <a href="javascript:void(0)" 
+            onclick="showContent('Membership')">Membership & Loyalty</a>
+            <a href="account.php" 
+            onclick="showContent('Account')">Account</a>
+            <a href="contact.html" 
+            onclick="showContent('Contact')">Contact</a>
+            <a href="legal.html" 
+            onclick="showContent('Legal')">Legal & Policies</a>
+        </div>
+      </div>
+      <div class="contentArea">
+        <span class="open-icon" onclick="openNav()">≡</span>
+      </div>
+    
+    </nav>
+  </header>
+
+  
+  <!-- HERO / VISIT HEADER-->
+  <section class="search" id="contact-hero">
+    <img src="./images/gallery15.jpg" alt="background">
+    <div class="content">
+      <h1>Plan Your Visit</h1>
+      <p>Everything you need for a safe, fun and wild day out!</p>
+    </div>
+  </section>
+
+
+    <div class="news-carousel">
+      <div class="list">
+          <div class="item">
+              <img src="images/gallery20.jpg">
+              <div class="carousel-content"><br>
+                  <div class="author">INFORMATION</div>
+                  <div class="title">MAP &</div>
+                  <div class="topic">DIRECTIONS</div><br>
+                  <div class="des">
+                      <b>Our location:</b><br><br>
+                      Riget Zoo Adventures<br>
+                      Adventure Way, Green Valley<br>
+                      Riget City, RG1 2AB<br>                 
+                  </div>
+                  <div class="news-buttons">
+                      <button type="button" onclick="location.href = 'visit.html#statistics'">DIRECTIONS</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> 
+  
+
+
+
+
+
+    <section class="statistics" id="statistics">
+      <div class="stat">
+        <h3>By Car</h3><br>
+        <h4>Free on-site parking available</h4><br>
+        <h4>EV charging stations available in the main car park</h4><br>
+      </div>
+      <div class="stat">
+        <h3>By Public Transport</h3><br>
+        <h4>Bus: Route 14 ends outside the main entrance</h4><br>
+        <h4>Train: Bridlington Station located 15 minutes away</h4><br>
+      </div>
+      <div class="stat">
+        <h3>On Foot / Bike</h3><br>
+        <h4>Secure bike racks available at all entrances</h4><br>
+        <h4>Maintained walking paths from all nearby areas</h4><br>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37441.85342233917!2d-0.24222677739504334!3d54.08942151344454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878ad4c42d80fe5%3A0x97a2164929538955!2sBridlington!5e0!3m2!1sen!2suk!4v1758539655383!5m2!1sen!2suk"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+    </section>
+
+
+    <!-- SCHEDULE TIMES -->
+    <section class="schedule-times">
+    <h2>Opening Times</h2>
+
+    <div class="schedule-group">
+      <h5>Weekdays</h5>
+
+      <div class="schedule-row">
+        <span class="time">MONDAY</span>
+        <span class="day">9 AM - 5 PM</span>
+
+        <span class="time">TUESDAY</span>
+        <span class="day">9 AM - 5 PM</span>
+
+        <span class="time">WEDNESDAY</span>
+        <span class="day">9 AM - 4 PM</span>
+
+        <span class="time">THURSDAY</span>
+        <span class="day">9 AM - 5 PM</span>
+      </div>
+    </div>
+
+    <div class="schedule-group">
+      <h5>Weekends</h5>
+
+      <div class="schedule-row">
+        <span class="time">SATURDAY</span>
+        <span class="day">8:30 AM - 7 PM</span>
+
+        <span class="time">SUNDAY</span>
+        <span class="day">8:30 AM - 6 PM</span>
+      </div>
+    </div>
+    </section>
+
+    <!--FAQ SECTION-->
+    <section class="faq-section">
+      <h1 class="faq-title">Frequently Asked Questions</h1>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to book tickets in advance?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Online booking is recommended, but tickets are also available at the gate.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Is the zoo suitable for young children?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We have stroller-friendly paths, family rest areas and child-focused exhibits.</p>
+          </div>
+        </div> 
+        <div class="faq-item">
+          <button class="faq-question">
+            Are food and drinks allowed inside?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, you may bring small snacks and water. Picnic areas are available.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer accessibility access?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The zoo is wheelchair accessible with specialised restrooms and parking.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I bring my pet?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>For the safety of our animals and guests, pets are not permitted (except service animals).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What happens if it rains?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The zoo remains open in most weather conditions. Many indoor exhibits are available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="visit">
+        <!-- SAFETY GUIDELINES -->
+        <br><br><h2>Safety Guidelines</h2><br>
+        <p>Your safety and the wellbeing of our animals are our top priorities. Please follow these rules during your visit:</p><br><br>
+
+        <p><b>For Guest Safety:</b></p><br>
+        <i>
+        <p>▪ Stay on marked paths at all times</p><br>
+        <p>▪ Children must be supervised at all times</p><br>
+        <p>▪ Do not climb on barriers or railings</p><br>
+        <p>▪ Follow all staff instructions immediately</p><br>
+        <p>▪ Wear suitable footwear and sun protection</p><br><br><br>
+        </i>
+
+        <p><b>For Animal Safety:</b></p><br>
+        <i>
+        <p>▪ Do not feed the animals</p><br>
+        <p>▪ Do not tap on glass enclosures</p><br>
+        <p>▪ No loud noises or sudden movements near exhibits</p><br>
+        <p>▪ Never throw objects into animal habitats</p><br>
+        </i>
+
+
+        <!-- PROHIBITED ITEMS -->
+        <section class="feeding-times">      
+            <div class="feeding-group">
+              <h5>Strictly Prohibited Items</h5>
+          
+              <div class="feeding-row">
+                <span class="time">NO</span>
+                <span class="animal"> Drones or remote-control devices</span>
+          
+                <span class="time">NO</span>
+                <span class="animal"> Alcohol or illegal substances</span>
+          
+                <span class="time">NO</span>
+                <span class="animal"> Large speakers or sound systems</span>
+          
+                <span class="time">NO</span>
+                <span class="animal"> Weapons of any kind</span>
+              </div>
+            </div>
+        </section>
+
+        <p>Failure to follow safety rules may result in removal from the park without refund.</p><br><br>
+        
+        <!-- ADDITIONAL MAIN CONTENT -->
+        <br><br><h2>What To Bring</h2><br>
+
+        <section class="statistics">
+            <div class="stat">
+              <h3>Comfortable walking shoes</h3>
+            </div>
+            <div class="stat">
+              <h3>Refillable water bottle</h3>
+            </div>
+            <div class="stat">
+              <h3>Sunscreen and hat</h3>
+            </div>
+            <div class="stat">
+                <h3>Weather-appropriate clothing</h3>
+            </div>
+        </section>
+
+        <br><br><h2>First Aid & Guest Services</h2><br><br>
+        <b>
+        <p>First aid stations located near the main entrance and safari zone</p><br>
+        <p>Lost & found available at Guest Services</p><br>
+        <p>Free Wi-Fi in cafe and entrance areas</p><br><br>
+        </b>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section class="newsletter">
+    <h2>Require additional support?</h2>
+
+    <div class="newsletter-form">
+ 
+      <button type="submit" id="email-button" onclick="location.href='contact.html'">Contact Us</button>
+    </div>
+
+
+    <p id="message"></p>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <h3>Riget Zoo Adventures</h3>
+        <p>Zoo and safari park since 1998.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account.php">Account</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=facebook.com" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com" alt="YouTube">
+          </a>
+          <a href="https://x.com/" target="_blank" aria-label="Twitter">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=twitter.com" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" alt="Instagram">
+          </a>
+          <a href="https://uk.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=linkedin.com" alt="LinkedIn">
+          </a>
+        </div>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Riget Zoo Adventures | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- COOKIE POPUP -->
+  <div class="popup-overlay" id="cookiePopup">
+    <div class="popup-box">
+      <p>
+        We use cookies to improve your experience on this site. 
+        By continuing, you agree to our 
+        <a href="legal.html#cookie-policy" target="_blank">Cookie Policy</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button id="acceptCookies">Accept</button>
+        <button id="declineCookies">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESET BUTTON -->
+  <div class="footer-reset">
+    <button id="resetCookies" class="hidden">Reset Cookies</button>
+  </div>
+
+  <!-- ACCESSIBILITY TOOLBAR -->
+  <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!window.micAccessTool) {
+        window.micAccessTool = new MicAccessTool({
+          link: 'legal.html',
+          contact: 'mailto:your-mail@your-awesome-website.com',
+          buttonPosition: 'left',
+          forceLang: 'en'
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

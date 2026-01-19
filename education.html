@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>RZA | Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">🦁 Riget Zoo Adventures</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.php">Account</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <input type="text" id="searchInput" placeholder="Search...">
+      
+      <div class="sideMenu" id="sideMenu">
+        <a href="javascript:void(0)"
+            class="closeBtn"
+            onclick="closeNav()">
+            x
+        </a>
+        <div class="mainMenu">
+            <h2>Menu</h2>
+            <a href="index.html" 
+            onclick="showContent('Home')">Home</a>
+            <a href="visit.html" 
+            onclick="showContent('Plan')">Plan Your Visit</a>
+            <a href="tickets.php"  
+            onclick="showContent('Tickets')">Ticket Admission</a>
+            <a href="safari.html"
+            onclick="showContent('Safari')">Animals & Safari</a>
+            <a href="hotel.php"  
+            onclick="showContent('Hotel')">Hotel Bookings</a>
+            <a href="education.html"  
+            onclick="showContent('Education')">Education</a>
+            <a href="javascript:void(0)" 
+            onclick="showContent('Membership')">Membership & Loyalty</a>
+            <a href="account.php" 
+            onclick="showContent('Account')">Account</a>
+            <a href="contact.html" 
+            onclick="showContent('Contact')">Contact</a>
+            <a href="legal.html" 
+            onclick="showContent('Legal')">Legal & Policies</a>
+        </div>
+      </div>
+      <div class="contentArea">
+        <span class="open-icon" onclick="openNav()">≡</span>
+      </div>
+    
+    </nav>
+  </header>
+
+
+
+  <!-- HERO / INTRO SECTION -->
+  <section class="search" id="contact-hero">
+    <img src="./imageS/gallery14.jpg" alt="background">
+    <div class="content">
+      <h1>Educational Resources</h1>
+      <p>Explore our collection of wildlife education resources, videos, and learning programs.    </p>
+    </div>
+  </section>
+
+  <!-- PAGE WRAPPER -->
+  <div class="legal-page-wrapper">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#learn-explore-protect">Learn Explore Protect</a></li>
+        <li><a href="#learning-resources">Learning Resources</a></li>
+        <li><a href="#external-links">External Links</a></li>
+        <li><a href="#educational-videos">Educational Videos</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+      </ul>
+    </aside>
+
+    <!-- EDUCATION CONTENT -->
+    <section class="legal-section">
+        <div id="learn-explore-protect"></div>
+      <div class="legal-container">
+        
+        <h2><i class="uil uil-shield-check"></i> Learn. Explore. Protect.</h2>
+
+        <p>At Riget Zoo Adventures, education is at the heart of everything we do. We believe that inspiring people to care about animals begins with understanding them. Our goal is to spark curiosity, build respect for wildlife, and encourage a lifelong commitment to protecting the natural world.</p>
+        <div id="learning-resources"></div>
+        <P>Whether you’re a student discovering animals for the first time, a teacher looking for engaging classroom resources, a parent encouraging learning beyond school, or a wildlife enthusiast eager to know more, our education programs are designed to make learning exciting, meaningful, and impactful.</P>
+        
+        <h2><i class="uil uil-lock-alt"></i> Learning Resources for Everyone</h2>
+
+        <p>We proudly offer a wide range of carefully selected learning materials created to suit all ages, learning styles, and ability levels. Our resources are designed to support both formal education and independent learning, making wildlife education accessible wherever you are — in the classroom, at home, or on the go.</p>
+        <br><p><b>Downloadable Resources</b></p>
+        <p>Our downloadable resources are perfect for classrooms, home learning environments, school projects, and group activities. Each resource is designed by education specialists and wildlife experts to ensure accuracy, engagement, and curriculum relevance.</p>
+        <p><b>Animal Fact Sheets </b>- In-depth profiles covering animal habitats, diets, behaviours, threats, and conservation status.</p>
+        <p><b>Student Activity Packs </b>- Interactive quizzes, puzzles, research tasks, and creative assignments that reinforce learning.</p>
+        <p><b>Teacher Lesson Plans </b>- Ready to use lesson plans with discussion topics, objectives, and assessment ideas.</p>
+        <p><b>Colouring & Activity Pages </b>- Fun activities designed to introduce younger learners to wildlife in an engaging way.</p>
+        <div id="external-links"></div>
+        <p>All downloads are completely free and updated regularly to ensure the latest conservation information is always available.</p>
+
+        <h2><i class="uil uil-book-alt"></i> Trusted External Learning Links</h2>
+
+        <p>To support continued learning beyond your visit, we partner with and recommend trusted wildlife education organisations from around the world. These carefully selected external links provide reliable, age-appropriate, and accurate information for extended learning.</p>
+        <br><p><b>Explore resources from:</b></p>
+        <p>▪ Global wildlife conservation organisations</p>
+        <p>▪ Endangered species databases</p>
+        <p>▪ Marine life research centres</p>
+        <p>▪ Rainforest and climate science education hubs</p>
+        <p>▪ Animal behaviour and zoology learning sites</p>
+        <div id="educational-videos"></div>
+        <p>Every external resource is reviewed to ensure it meets our standards for accuracy, safety, and educational value.</p>
+
+
+        <h2><i class="uil uil-copyright"></i> Educational Videos</h2>
+
+        <p>Watch, learn, and explore wildlife from around the world with our curated collection of educational videos. These videos bring conservation to life through real-world stories, expert insights, and behind-the-scenes access to animal care and protection programs.</p>
+        <br><p><b>Featured Video Topics Include:</b></p>
+        <p><a href="https://www.youtube.com/watch?v=m2MibjJgyjs">How animals adapt to survive in their natural environments</a></p>
+        <p><a href="https://www.youtube.com/watch?v=qlwvi-Cpk7Q">Behind-the-scenes animal care and daily routines</a></p>
+        <p><a href="https://www.youtube.com/watch?v=DT4jyC1wvvM">Endangered species success stories and recovery efforts</a></p>
+        <div id="programs"></div>
+        <p><a href="https://www.youtube.com/watch?v=e-yAO267tvE">How conservation programs work in the wild</a></p>
+        <p><a href="https://www.youtube.com/watch?v=0Puv0Pss33M">What you can do at home to help protect wildlife and the planet</a></p>
+     
+        <h2><i class="uil uil-info-circle"></i> School & Group Programs</h2>
+
+        <p>Riget Zoo Adventures offers engaging education programs tailored specifically for groups of all ages and learning levels, including:</p>
+        <p>▪ Primary and secondary schools</p>
+        <p>▪ Homeschool groups</p>
+        <p>▪ Youth clubs, scouts, and community groups</p>
+        <p>▪ College and university students</p>
+        <p>Our programs include guided zoo tours, virtual learning sessions, live animal demonstrations, interactive workshops and Q&A sessions with our animal care and conservation experts.</p>
+        <div id="get-involved"></div>
+        <p>Each experience is designed to be educational, inspiring and aligned with real-world conservation goals.</p>
+
+        <h2><i class="uil uil-info-circle"></i> Get Involved in Learning</h2>
+
+        <p>Education leads to action, and every small action makes a difference. Here’s how you can take the next step in your learning journey and help protect wildlife:</p>
+        <p><i>Join a guided conservation tour</i></p>
+        <p><i>Download and complete a learning pack</i></p>
+        <p><i>Watch and share our educational videos</i></p>
+        <div id="downloads"></div>
+        <p><i>Make wildlife-friendly choices in your daily life</i></p>
+
+        <h2><i class="uil uil-info-circle"></i> Downloadable Materials</h2><br>
+
+        <a href="CZ_Ed-Activity-Adaptations-KS1-2.pdf" download="adaptations_ks1-2.pdf">Adaptations KS1-2</a><br><br>
+        <a href="CZ_Ed-Activity-Adaptations-KS3-4.pdf" download="adaptations_ks3-4.pdf">Adaptations KS3-4</a><br><br>
+        <a href="CZ_Ed-Activity-Africa.pdf" download="africa_activity.pdf">Activity: Africa</a><br><br>
+        <a href="CZ_Ed-Activity-Endangered-KS1-2.pdf" download="endangered_ks1-2.pdf">Endangered KS1-2</a><br><br>
+        <a href="CZ_Ed-Activity-Endangered-KS3-4.pdf" download="endangered_ks3-4.pdf">Endangered KS3-4</a><br><br>
+        <a href="CZ_Ed-Activity-Evolution.pdf" download="evolution_activity.pdf">Activity: Evolution</a><br><br>
+        <a href="CZ_Ed-Activity-Plant.pdf" download="plants_activity.pdf">Activity: Plants</a><br><br>
+        <a href="CZ_Ed-Activity-Rainforest.pdf" download="rainforest_activity.pdf">Activity: Rainforest</a><br><br>
+        <a href="CZ_Ed-Activity-Water-Animals.pdf" download="water-animals_activity.pdf">Activity: Water Animals</a><br><br>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <h3>Riget Zoo Adventures</h3>
+        <p>Zoo and safari park since 1998.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account.php">Account</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=facebook.com" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com" alt="YouTube">
+          </a>
+          <a href="https://x.com/" target="_blank" aria-label="Twitter">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=twitter.com" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" alt="Instagram">
+          </a>
+          <a href="https://uk.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=linkedin.com" alt="LinkedIn">
+          </a>
+        </div>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Riget Zoo Adventures | All rights reserved</p>
+    </div>
+  </footer>
+
+  
+  <!-- ACCESSIBILITY TOOLBAR -->
+
+  <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!window.micAccessTool) {
+        window.micAccessTool = new MicAccessTool({
+          link: 'legal.html',
+          contact: 'mailto:your-mail@your-awesome-website.com',
+          buttonPosition: 'left', 
+          forceLang: 'en' 
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

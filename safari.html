@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RZA | Animals & Safari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lightbox.min.css">
+  <script src="script.js" defer></script>
+  <script src="lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">🦁 Riget Zoo Adventures</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.php">Account</a></li>
+        <li><a href="index.html#about-us">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <input type="text" id="searchInput" placeholder="Search...">
+      
+      <div class="sideMenu" id="sideMenu">
+        <a href="javascript:void(0)"
+            class="closeBtn"
+            onclick="closeNav()">
+            x
+        </a>
+        <div class="mainMenu">
+            <h2>Menu</h2>
+            <a href="index.html" 
+            onclick="showContent('Home')">Home</a>
+            <a href="visit.html" 
+            onclick="showContent('Plan')">Plan Your Visit</a>
+            <a href="tickets.php"  
+            onclick="showContent('Tickets')">Ticket Admission</a>
+            <a href="safari.html"
+            onclick="showContent('Safari')">Animals & Safari</a>
+            <a href="hotel.php"  
+            onclick="showContent('Hotel')">Hotel Bookings</a>
+            <a href="education.html"  
+            onclick="showContent('Education')">Education</a>
+            <a href="javascript:void(0)" 
+            onclick="showContent('Membership')">Membership & Loyalty</a>
+            <a href="account.php" 
+            onclick="showContent('Account')">Account</a>
+            <a href="contact.html" 
+            onclick="showContent('Contact')">Contact</a>
+            <a href="legal.html" 
+            onclick="showContent('Legal')">Legal & Policies</a>
+        </div>
+      </div>
+      <div class="contentArea">
+        <span class="open-icon" onclick="openNav()">≡</span>
+      </div>
+    
+    </nav>
+  </header>
+
+
+  <!-- HERO / SEARCH SECTION -->
+  <section class="search">
+    <img src="./images/carousel-animal1.jpg" alt="Lion background" class="search-bg">
+    <div class="content">
+      <h1>Animals & Safari</h1>
+      <p>Read all about our animals and experiences at Riget Zoo Adventures</p>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <div class="carousel">
+    <div class="list">
+        <div class="item">
+            <img src="images/carousel-animal4.jpg">
+            <div class="carousel-content">
+                <div class="author">EXPERIENCE</div>
+                <div class="title">WILDLIFE</div>
+                <div class="topic">SAFARI</div>
+                <div class="des">
+                  Explore hundreds of incredible animals at Riget Zoo Adventures from koalas to penguins as we take you through each habitiat with our exclusive guided safari tour experience. Find out more today for offers and deals. 
+                </div>
+                <div class="carousel-buttons">
+                    <button type="button" onclick="location.href = 'visit.html'">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-animal5.jpg">
+            <div class="carousel-content">
+                <div class="author">EXPERIENCE</div>
+                <div class="title">PETTING</div>
+                <div class="topic">ZOO</div>
+                <div class="des">
+                  Get closer than ever with our friendly farm animals in the Riget Petting Zoo. Perfect for children and animal lovers of all ages, this hands-on experience lets you meet, feed, and learn about some of the gentlest animals at the zoo in a safe, supervised environment.
+                </div>
+                <div class="carousel-buttons">
+                    <button type="button" onclick="location.href = '#featured-animals'">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-animal3.jpg">
+            <div class="carousel-content">
+                <div class="author">FACILITIES</div>
+                <div class="title">TICKET</div>
+                <div class="topic">ADMISSION</div>
+                <div class="des">
+                  Plan your perfect day at Riget Zoo Adventures with our flexible ticket options. Whether you're visiting solo, with friends, or as a family, we offer great value admission with full access to exhibits, shows, and attractions throughout the park.
+                </div>
+                <div class="carousel-buttons">
+                    <button type="button" onclick="location.href = 'ticket.html'">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-amusements.jpg">
+            <div class="carousel-content">
+                <div class="author">FACILITIES</div>
+                <div class="title">FAMILY</div>
+                <div class="topic">AMUSEMENTS</div>
+                <div class="des">
+                  From exciting rides to interactive play zones, our family amusements area is packed with fun for all ages. Take a break from the animal trails and enjoy thrilling attractions designed to keep the whole family smiling all day long.
+                </div>
+                <div class="carousel-buttons">
+                    <button type="button" onclick="location.href = 'index.html#about-us'">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/hotel-banner.jpg">
+            <div class="carousel-content">
+                <div class="author">FACILITIES</div>
+                <div class="title">HOTEL</div>
+                <div class="topic">BOOKINGS</div>
+                <div class="des">
+                  Turn your visit into a wild getaway with a stay at the Riget Zoo Hotel. Enjoy comfortable rooms, stunning views, and exclusive early access to the zoo. Perfect for families, couples, and school trips looking for a complete adventure experience.
+                </div>
+                <div class="carousel-buttons">
+                    <button type="button" onclick="location.href = 'hotel.php'">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-shop.jpg">
+            <div class="carousel-content">
+                <div class="author">FACILITIES</div>
+                <div class="title">RESTAURANT</div>
+                <div class="topic">GIFT SHOP</div>
+                <div class="des">
+                  Refuel with delicious meals at our on-site restaurant, then browse the gift shop for the perfect keepsake. From tasty family-friendly food to exclusive souvenirs, there’s something for everyone to take home and remember their zoo adventure.
+                </div>
+                <div class="carousel-buttons">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LIST THUMBNAIL -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="images/carousel-animal4.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                    Experience
+                </div>
+                <div class="thumbnail-description">
+                    Wildlife Safari
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-animal5.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                   Experience
+                </div>
+                <div class="thumbnail-description">
+                    Petting Zoo
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-animal3.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                    Facilities
+                </div>
+                <div class="thumbnail-description">
+                    Ticket Admisson
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-amusements.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                    Facilities
+                </div>
+                <div class="thumbnail-description">
+                    Family Amusements
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/hotel-banner.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                    Facilities
+                </div>
+                <div class="thumbnail-description">
+                    Hotel Bookings
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-shop.jpg">
+            <div class="thumbnail-content">
+                <div class="thumbnail-title">
+                    Facilities
+                </div>
+                <div class="thumbnail-description">
+                    Restaurant & Gift Shop
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAROUSEL BUTTONS -->
+
+    <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+            
+    <!-- CAROUSEL TIMER -->
+    <div class="time"></div>
+  </div>
+  <script src="script.js"></script>
+
+
+  <!-- CONTENT DIVIDER -->
+  <section class="quick-links">
+  </section>
+
+  
+  <!-- MAIN SECTION -->
+  <section class="safari-content">
+    <br><br><h2>Conservation at RZA</h2><br>
+    <p>At Riget Zoo Adventures, our mission goes beyond unforgettable animal encounters and experiences. We are deeply committed to protecting endangered species, preserving natural habitats and inspiring every visitor to become a wildlife champion. Every ticket you purchase helps support conservation projects around the world.</p><br><br>
+    <h2><b>How We Make a Difference</b></h2><br>
+    
+    <div class="conservation-gallery">
+      <div class="conservation-gallery-item">
+        <img src="images/gallery1.jpg" alt="Wildlife Protection">
+        <div class="conservation-overlay">
+          <h3>Wildlife Protection</h3><br>
+          <p>We proudly support global programs that rescue, rehabilitate, and re-release endangered animals into the wild</p>
+        </div>
+      </div>
+    
+      <div class="conservation-gallery-item">
+        <img src="images/conservation-2.jpg" alt="Habitat Preservation">
+        <div class="conservation-overlay">
+          <h3>Habitat Preservation</h3><br>
+          <p>Through our 5 global partnerships, we help protect forests, oceans, and grasslands that animals depend on to survive</p>
+        </div>
+      </div>
+    
+      <div class="conservation-gallery-item">
+        <img src="images/conservation-3.jpg" alt="Breeding for the Future">
+        <div class="conservation-overlay">
+          <h3>Breeding for the Future</h3><br>
+          <p>Our ethical breeding programs focus on increasing our 12 supported vulnerable species and maintaining a natural genetic diversity</p>
+        </div>
+      </div>
+    
+      <div class="conservation-gallery-item">
+        <img src="images/conservation-4.jpg" alt="Education & Awareness">
+        <div class="conservation-overlay">
+          <h3>Education & Awareness</h3><br>
+          <p id="featured-animals">Our guided tours, school programs, and interactive displays teach visitors how small actions can make a big impact</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br><h2>How You Can Help </h2>
+    <p id="bullet-points"><b>
+      ▪ Adopt an animal<br><br>
+      ▪ Join a conservation tour<br><br>
+      ▪ Donate to our Wildlife Fund<br><br>
+      ▪ Reduce, reuse and recycle<br>
+    </b></p>
+
+    
+
+  
+    <br><br><br><h2>Featured Animals</h2><br>
+     
+    <div class="animal-gallery">
+        <a href="images/gallery1.jpg" data-lightbox="mygallery" data-title="Meerkat <i>(Suricata suricatta)</i>"><img src="images/gallery1-sml.jpg"></a> 
+        <a href="images/gallery2.jpg" data-lightbox="mygallery" data-title="Lion <i>(Panthera leo)</i>"><img src="images/gallery2-sml.jpg"></a>        
+        <a href="images/gallery3.jpg" data-lightbox="mygallery" data-title="Giant Panda <i>(Ailuropoda melanoleuca)</i>"><img src="images/gallery3-sml.jpg"></a>         
+        <a href="images/gallery4.jpg" data-lightbox="mygallery" data-title="Leopard <i>(Panthera pardus)</i>"><img src="images/gallery4-sml.jpg"></a>         
+        <a href="images/gallery5.jpg" data-lightbox="mygallery" data-title="Ostrich <i>(Struthio camelus)</i>"><img src="images/gallery5-sml.jpg"></a>       
+        <a href="images/gallery6.jpg" data-lightbox="mygallery" data-title="Bongo Antelope <i>(Tragelaphus eurycerus)</i>"><img src="images/gallery6-sml.jpg"></a>
+        <a href="images/gallery7.jpg" data-lightbox="mygallery" data-title="African Elephant <i>(Loxodonta africana)</i>"><img src="images/gallery7-sml.jpg"></a>
+        <a href="images/gallery8.jpg" data-lightbox="mygallery" data-title="Bengal Tiger <i>(Panthera tigris tigris)</i>"><img src="images/gallery8-sml.jpg"></a>
+        <a href="images/gallery9.jpg" data-lightbox="mygallery" data-title="Bald Eagle <i>(Haliaeetus leucocephalus)</i>"><img src="images/gallery9-sml.jpg"></a>
+        <a href="images/gallery10.jpg" data-lightbox="mygallery" data-title="Green Sea Turtle <i>(Chelonia mydas)</i>"><img src="images/gallery10-sml.jpg"></a>
+        <a href="images/gallery11.jpg" data-lightbox="mygallery" data-title="Red Kangaroo <i>(Macropus rufus)</i>"><img src="images/gallery11-sml.jpg"></a>
+        <a href="images/gallery12.jpg" data-lightbox="mygallery" data-title="Emperor Penguin <i>(Aptenodytes forsteri)</i>"><img src="images/gallery12-sml.jpg"></a>
+        <a href="images/gallery13.jpg" data-lightbox="mygallery" data-title="Poison Dart Frog <i>(Dendrobatidae)</i>"><img src="images/gallery13-sml.jpg"></a>
+        <a href="images/gallery14.jpg" data-lightbox="mygallery" data-title="Great White Shark <i>(Carcharodon carcharias)</i>"><img src="images/gallery14-sml.jpg"></a>
+        <a href="images/gallery15.jpg" data-lightbox="mygallery" data-title="Red Panda <i>(Ailurus fulgens)</i>"><img src="images/gallery15-sml.jpg"></a>
+        <a href="images/gallery16.jpg" data-lightbox="mygallery" data-title="King Cobra <i>(Ophiophagus hannah)</i>"><img src="images/gallery16-sml.jpg"></a> 
+        <a href="images/gallery17.jpg" data-lightbox="mygallery" data-title="Giraffe <i>(Giraffa camelopardalis)</i>"><img src="images/gallery17-sml.jpg"></a> 
+        <a href="images/gallery18.jpg" data-lightbox="mygallery" data-title="Zebra <i>(Equus quagga)</i>"><img src="images/gallery18-sml.jpg"></a> 
+        <a href="images/gallery19.jpg" data-lightbox="mygallery" data-title="Hippopotamus <i>(Hippopotamus amphibius)</i>"><img src="images/gallery19-sml.jpg"></a> 
+        <a href="images/gallery20.jpg" data-lightbox="mygallery" data-title="Ring-tailed Lemur <i>(Lemur catta)</i>"><img src="images/gallery20-sml.jpg"></a> 
+        <a href="images/gallery21.jpg" data-lightbox="mygallery" data-title="Flamingo <i>(Phoenicopterus roseus)</i>"><img src="images/gallery21-sml.jpg"></a> 
+
+    </div>
+
+
+  <!-- FEEDING TIMES -->
+  <section class="feeding-times">
+    <h2>Daily Feeding Times</h2>
+  
+    <div class="feeding-group">
+      <h5>Morning Feedings</h5>
+  
+      <div class="feeding-row">
+        <span class="time">10:00 AM</span>
+        <span class="animal"><i class="fa-solid fa-hippo"></i> Elephants</span>
+  
+        <span class="time">11:30 AM</span>
+        <span class="animal"><i class="fa-solid fa-horse"></i> Giraffes</span>
+  
+        <span class="time">11:45 AM</span>
+        <span class="animal"><i class="fa-solid fa-hippo"></i> Elephants</span>
+  
+        <span class="time">11:45 AM</span>
+        <span class="animal"><i class="fa-solid fa-otter"></i> Meerkats</span>
+      </div>
+    </div>
+  
+    <div class="feeding-group">
+      <h5>Afternoon Feedings</h5>
+  
+      <div class="feeding-row">
+        <span class="time">1:15 PM</span>
+        <span class="animal"><i class="fa-solid fa-water"></i> Otters</span>
+  
+        <span class="time">1:30 PM</span>
+        <span class="animal"><i class="fa-solid fa-hippo"></i> Elephants</span>
+  
+        <span class="time">1:30 PM</span>
+        <span class="animal"><i class="fa-solid fa-paw"></i> Lemurs</span>
+  
+        <span class="time">2:00 PM</span>
+        <span class="animal"><i class="fa-solid fa-dragon"></i> Alligators</span>
+  
+        <span class="time">2:45 PM</span>
+        <span class="animal"><i class="fa-solid fa-hippo"></i> Elephants</span>
+  
+        <span class="time">3:30 PM</span>
+        <span class="animal"><i class="fa-solid fa-paw"></i> Sun Bears</span>
+  
+        <span class="time">4:00 PM</span>
+        <span class="animal"><i class="fa-solid fa-hippo"></i> Elephants</span>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- COOKIE POPUP -->
+  <div class="popup-overlay" id="cookiePopup">
+    <div class="popup-box">
+      <p>
+        We use cookies to improve your experience on this site. 
+        By continuing, you agree to our 
+        <a href="legal.html#cookie-policy" target="_blank">Cookie Policy</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button id="acceptCookies">Accept</button>
+        <button id="declineCookies">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESET BUTTON -->
+  <div class="footer-reset">
+    <button id="resetCookies" class="hidden">Reset Cookies</button>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <h3>Riget Zoo Adventures</h3>
+        <p>Zoo and safari park since 1998.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account.php">Account</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=facebook.com" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com" alt="YouTube">
+          </a>
+          <a href="https://x.com/" target="_blank" aria-label="Twitter">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=twitter.com" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" alt="Instagram">
+          </a>
+          <a href="https://uk.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=linkedin.com" alt="LinkedIn">
+          </a>
+        </div>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Riget Zoo Adventures | All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- ACCESSIBILITY TOOLBAR -->
+  <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!window.micAccessTool) {
+        window.micAccessTool = new MicAccessTool({
+          link: 'legal.html',
+          contact: 'mailto:your-mail@your-awesome-website.com',
+          buttonPosition: 'left',
+          forceLang: 'en'
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
